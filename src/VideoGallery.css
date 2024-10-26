@@ -31,6 +31,14 @@
     font-family: 'Poppins', sans-serif;
   }
   
+  .video-container video {
+    max-width: 50%; /* Limite la taille maximale de la vidéo dans la modal */
+    height: auto;   /* Conserve les proportions de la vidéo */
+    display: block;
+    margin: 0 auto;
+  }
+
+  
   header h3, header h5 {
     font-family: 'Roboto', sans-serif;
     margin-top: 10px;
