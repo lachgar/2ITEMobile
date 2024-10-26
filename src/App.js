@@ -62,8 +62,8 @@ const VideoGallery = () => {
   return (
     <div className="container my-5">
       <header className="text-center mb-5">
-        <h1 className="display-4">Mini projets Contrôle pratique programmation mobile</h1>
-        <h3 className="text-muted">2ITE ENSA EL JADIDA</h3>
+        <h2 className="display-4">Mini projets Contrôle pratique programmation mobile</h2>
+        <h4 className="text-muted">2ITE ENSA EL JADIDA</h4>
         <h5 className="text-secondary">Encadré par Pr. Mohamed LACHGAR</h5>
       </header>
 
