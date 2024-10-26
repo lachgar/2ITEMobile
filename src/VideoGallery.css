@@ -32,7 +32,7 @@
   }
   
   .video-container video {
-    max-width: 50%; /* Limite la taille maximale de la vidéo dans la modal */
+    max-width: 40%; /* Limite la taille maximale de la vidéo dans la modal */
     height: auto;   /* Conserve les proportions de la vidéo */
     display: block;
     margin: 0 auto;
