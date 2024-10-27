@@ -66,13 +66,13 @@ const VideoGallery = () => {
       <header className="text-center mb-5">
         <h3 className="display-4">Mini projets Contrôle pratique programmation mobile</h3>
         <h4 className="text-muted">2ITE ENSA EL JADIDA</h4>
-        <h5 className="text-secondary">Encadré par Pr. Mohamed LACHGAR</h5>
+        <h5 className="text-secondary">Pr. Mohamed LACHGAR</h5>
         <p style={{ color: "red" }}>
           Il est impératif d'utiliser les conceptions fixées dans chaque travail.
         </p>
       </header>
     </div>
-    
+
       <div className="row">
         {projects.map((project, index) => (
           <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
