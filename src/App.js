@@ -7,263 +7,263 @@ import { Modal } from 'react-bootstrap';
 
 const projects = [
   {
-      "Number": 1,
-      "Title": "Interface graphique",
-      "Developer": "Ait Ouahda Younes",
-      "Video URL": "/videos/video1.mp4",
-      "GitHub URL": "https://github.com/YounesAO/Android-kotlin-project-TP1"
+      "number": 1,
+      "title": "Interface graphique",
+      "developer": "Ait Ouahda Younes",
+      "videoUrl": "/videos/video1.mp4",
+      "githubUrl": "https://github.com/YounesAO/Android-kotlin-project-TP1"
   },
   {
-      "Number": 2,
-      "Title": "Pizza",
-      "Developer": "Amerga Younes",
-      "Video URL": "/videos/video2.mp4",
-      "GitHub URL": "https://github.com/Younessamg/pizza_mobile.git"
+      "number": 2,
+      "title": "Pizza",
+      "developer": "Amerga Younes",
+      "videoUrl": "/videos/video2.mp4",
+      "githubUrl": "https://github.com/Younessamg/pizza_mobile.git"
   },
   {
-      "Number": 3,
-      "Title": "TabHost",
-      "Developer": "Anejjar Ihssane",
-      "Video URL": "/videos/video3.mp4",
-      "GitHub URL": "https://github.com/Anejjar24/Gestion-taches"
+      "number": 3,
+      "title": "TabHost",
+      "developer": "Anejjar Ihssane",
+      "videoUrl": "/videos/video3.mp4",
+      "githubUrl": "https://github.com/Anejjar24/Gestion-taches"
   },
   {
-      "Number": 4,
-      "Title": "RecyclerView",
-      "Developer": "AZIZ Mohammed",
-      "Video URL": "/videos/video4.mp4",
-      "GitHub URL": "https://github.com/aziz-laravel/Projet4"
+      "number": 4,
+      "title": "RecyclerView",
+      "developer": "AZIZ Mohammed",
+      "videoUrl": "/videos/video4.mp4",
+      "githubUrl": "https://github.com/aziz-laravel/Projet4"
   },
   {
-      "Number": 5,
-      "Title": "Volley + Image",
-      "Developer": "Ballouk Mohamed",
-      "Video URL": "/videos/video5.mp4",
-      "GitHub URL": "https://github.com/Ballouk12/projet5.git"
+      "number": 5,
+      "title": "Volley + Image",
+      "developer": "Ballouk Mohamed",
+      "videoUrl": "/videos/video5.mp4",
+      "githubUrl": "https://github.com/Ballouk12/projet5.git"
   },
   {
-      "Number": 6,
-      "Title": "Localisation",
-      "Developer": "BEESAM Adam",
-      "Video URL": "/videos/video6.mp4",
-      "GitHub URL": "https://github.com/AdamBessam/Controle-Mobile"
+      "number": 6,
+      "title": "Localisation",
+      "developer": "BEESAM Adam",
+      "videoUrl": "/videos/video6.mp4",
+      "githubUrl": "https://github.com/AdamBessam/Controle-Mobile"
   },
   {
-      "Number": 7,
-      "Title": "Map + Volley",
-      "Developer": "BOKTAYA Amine",
-      "Video URL": "/videos/video7.mp4",
-      "GitHub URL": "https://github.com/BoktayaAmine/dev_mobile_projects/tree/master/Google_Maps_App"
+      "number": 7,
+      "title": "Map + Volley",
+      "developer": "BOKTAYA Amine",
+      "videoUrl": "/videos/video7.mp4",
+      "githubUrl": "https://github.com/BoktayaAmine/dev_mobile_projects/tree/master/Google_Maps_App"
   },
   {
-      "Number": 8,
-      "Title": "SQLite",
-      "Developer": "BOUJNAH AsSia",
-      "Video URL": "/videos/video8.mp4",
-      "GitHub URL": "https://github.com/assia1905/TPSQLite"
+      "number": 8,
+      "title": "SQLite",
+      "developer": "BOUJNAH AsSia",
+      "videoUrl": "/videos/video8.mp4",
+      "githubUrl": "https://github.com/assia1905/TPSQLite"
   },
   {
-      "Number": 9,
-      "Title": "Fragment",
-      "Developer": "BOUKHRAIS Meryem",
-      "Video URL": "/videos/video9.mp4",
-      "GitHub URL": "https://github.com/Bou-Mery/MyNewsApp"
+      "number": 9,
+      "title": "Fragment",
+      "developer": "BOUKHRAIS Meryem",
+      "videoUrl": "/videos/video9.mp4",
+      "githubUrl": "https://github.com/Bou-Mery/MyNewsApp"
   },
   {
-      "Number": 10,
-      "Title": "Navigation Drawer",
-      "Developer": "Bouleknadel Abderrahmane",
-      "Video URL": "/videos/video10.mp4",
-      "GitHub URL": "https://github.com/bouleknadel/LibraryApp.git"
+      "number": 10,
+      "title": "Navigation Drawer",
+      "developer": "Bouleknadel Abderrahmane",
+      "videoUrl": "/videos/video10.mp4",
+      "githubUrl": "https://github.com/bouleknadel/LibraryApp.git"
   },
   {
-      "Number": 11,
-      "Title": "Notifications",
-      "Developer": "BOUSENSAR Rajaa",
-      "Video URL": "/videos/video11.mp4",
-      "GitHub URL": "https://github.com/rajaa52/depot1.git"
+      "number": 11,
+      "title": "Notifications",
+      "developer": "BOUSENSAR Rajaa",
+      "videoUrl": "/videos/video11.mp4",
+      "githubUrl": "https://github.com/rajaa52/depot1.git"
   },
   {
-      "Number": 12,
-      "Title": "Capteurs",
-      "Developer": "CHAJARI Salma",
-      "Video URL": "/videos/video12.mp4",
-      "GitHub URL": "https://github.com/Salma-CHAJARI/SensorsProject.git"
+      "number": 12,
+      "title": "Capteurs",
+      "developer": "CHAJARI Salma",
+      "videoUrl": "/videos/video12.mp4",
+      "githubUrl": "https://github.com/Salma-CHAJARI/SensorsProject.git"
   },
   {
-      "Number": 13,
-      "Title": "Retrofit",
-      "Developer": "CHOUAY Walid",
-      "Video URL": "/videos/video13.mp4",
-      "GitHub URL": "https://github.com/CHOUAY15/EnsaHealth"
+      "number": 13,
+      "title": "Retrofit",
+      "developer": "CHOUAY Walid",
+      "videoUrl": "/videos/video13.mp4",
+      "githubUrl": "https://github.com/CHOUAY15/EnsaHealth"
   },
   {
-      "Number": 14,
-      "Title": "Room",
-      "Developer": "DAOUDI Mohammed",
-      "Video URL": "/videos/video14.mp4",
-      "GitHub URL": "https://github.com/Mohammedaoudi/ENSAJ-APP-Management"
+      "number": 14,
+      "title": "Room",
+      "developer": "DAOUDI Mohammed",
+      "videoUrl": "/videos/video14.mp4",
+      "githubUrl": "https://github.com/Mohammedaoudi/ENSAJ-APP-Management"
   },
   {
-      "Number": 15,
-      "Title": "TabLayout + ViewPager/Fragment",
-      "Developer": "DOUIDY Sifeddine",
-      "Video URL": "/videos/video15.mp4",
-      "GitHub URL": "https://github.com/SaifeddineDouidy/Beginner-Projects-Mobile-JAVA/tree/master/Projet_Controle"
+      "number": 15,
+      "title": "TabLayout + ViewPager/Fragment",
+      "developer": "DOUIDY Sifeddine",
+      "videoUrl": "/videos/video15.mp4",
+      "githubUrl": "https://github.com/SaifeddineDouidy/Beginner-Projects-Mobile-JAVA/tree/master/Projet_Controle"
   },
   {
-      "Number": 16,
-      "Title": "LiveData + ViewModel",
-      "Developer": "DRIHAM Siham",
-      "Video URL": "/videos/video16.mp4",
-      "GitHub URL": "https://github.com/SihamDriham/TodoList"
+      "number": 16,
+      "title": "LiveData + ViewModel",
+      "developer": "DRIHAM Siham",
+      "videoUrl": "/videos/video16.mp4",
+      "githubUrl": "https://github.com/SihamDriham/TodoList"
   },
   {
-      "Number": 17,
-      "Title": "Data Binding",
-      "Developer": "EL ABIDI Aya",
-      "Video URL": "/videos/video17.mp4",
-      "GitHub URL": "https://github.com/yaelaya/TP-Visit_Paris.git"
+      "number": 17,
+      "title": "Data Binding",
+      "developer": "EL ABIDI Aya",
+      "videoUrl": "/videos/video17.mp4",
+      "githubUrl": "https://github.com/yaelaya/TP-Visit_Paris.git"
   },
   {
-      "Number": 18,
-      "Title": "Firebase",
-      "Developer": "EL GHARBI ABDELLAH",
-      "Video URL": "/videos/video18.mp4",
-      "GitHub URL": "https://github.com/abdellah-elgharbi/chat.git"
+      "number": 18,
+      "title": "Firebase",
+      "developer": "EL GHARBI ABDELLAH",
+      "videoUrl": "/videos/video18.mp4",
+      "githubUrl": "https://github.com/abdellah-elgharbi/chat.git"
   },
   {
-      "Number": 19,
-      "Title": "Coroutines",
-      "Developer": "EL MAHJOUBI Soukaina",
-      "Video URL": "/videos/video19.mp4",
-      "GitHub URL": "elmahjoubisouka/Mini_projet_application_Quiz"
+      "number": 19,
+      "title": "Coroutines",
+      "developer": "EL MAHJOUBI Soukaina",
+      "videoUrl": "/videos/video19.mp4",
+      "githubUrl": "elmahjoubisouka/Mini_projet_application_Quiz"
   },
   {
-      "Number": 20,
-      "Title": "WorkManager",
-      "Developer": "EL MASKYNE Mohamed Amine",
-      "Video URL": "/videos/video20.mp4",
-      "GitHub URL": "https://github.com/MOHAMED-AMINE11/E-MEDEC.git"
+      "number": 20,
+      "title": "WorkManager",
+      "developer": "EL MASKYNE Mohamed Amine",
+      "videoUrl": "/videos/video20.mp4",
+      "githubUrl": "https://github.com/MOHAMED-AMINE11/E-MEDEC.git"
   },
   {
-      "Number": 21,
-      "Title": "Bluetooth",
-      "Developer": "ELBAHLOULI Salma",
-      "Video URL": "/videos/video21.mp4",
-      "GitHub URL": "https://github.com/salma510/Bluetooth"
+      "number": 21,
+      "title": "Bluetooth",
+      "developer": "ELBAHLOULI Salma",
+      "videoUrl": "/videos/video21.mp4",
+      "githubUrl": "https://github.com/salma510/Bluetooth"
   },
   {
-      "Number": 22,
-      "Title": "Camera API",
-      "Developer": "ELHALLA Zineb",
-      "Video URL": "/videos/video22.mp4",
-      "GitHub URL": "https://github.com/ZinebELHALLA/CamApp"
+      "number": 22,
+      "title": "Camera API",
+      "developer": "ELHALLA Zineb",
+      "videoUrl": "/videos/video22.mp4",
+      "githubUrl": "https://github.com/ZinebELHALLA/CamApp"
   },
   {
-      "Number": 23,
-      "Title": "ExoPlayer",
-      "Developer": "ELLOUBAB Aya",
-      "Video URL": "/videos/video23.mp4",
-      "GitHub URL": "https://github.com/aya-elloubab/ExoPlayer-Android-Application"
+      "number": 23,
+      "title": "ExoPlayer",
+      "developer": "ELLOUBAB Aya",
+      "videoUrl": "/videos/video23.mp4",
+      "githubUrl": "https://github.com/aya-elloubab/ExoPlayer-Android-Application"
   },
   {
-      "Number": 24,
-      "Title": "Firebase Cloud Messaging",
-      "Developer": "Fattouhi Radwa",
-      "Video URL": "/videos/video24.mp4",
-      "GitHub URL": "https://github.com/Radwa-f/FCM_Project.git"
+      "number": 24,
+      "title": "Firebase Cloud Messaging",
+      "developer": "Fattouhi Radwa",
+      "videoUrl": "/videos/video24.mp4",
+      "githubUrl": "https://github.com/Radwa-f/FCM_Project.git"
   },
   {
-      "Number": 25,
-      "Title": "Jetpack Compose",
-      "Developer": "Fihri Yasmine",
-      "Video URL": "/videos/video25.mp4",
-      "GitHub URL": "https://github.com/yasminefhr1/MovieApp_Contole"
+      "number": 25,
+      "title": "Jetpack Compose",
+      "developer": "Fihri Yasmine",
+      "videoUrl": "/videos/video25.mp4",
+      "githubUrl": "https://github.com/yasminefhr1/MovieApp_Contole"
   },
   {
-      "Number": 26,
-      "Title": "Permissions Runtime",
-      "Developer": "HARATI Ayoub",
-      "Video URL": "/videos/video26.mp4",
-      "GitHub URL": "https://github.com/ayoub-aav/TPs-CoursMobile/tree/main/permission"
+      "number": 26,
+      "title": "Permissions Runtime",
+      "developer": "HARATI Ayoub",
+      "videoUrl": "/videos/video26.mp4",
+      "githubUrl": "https://github.com/ayoub-aav/TPs-CoursMobile/tree/main/permission"
   },
   {
-      "Number": 27,
-      "Title": "Gesture Detection",
-      "Developer": "Khalil Fatima",
-      "Video URL": "/videos/video27.mp4",
-      "GitHub URL": "https://github.com/fatikhalil/projet1.git"
+      "number": 27,
+      "title": "Gesture Detection",
+      "developer": "Khalil Fatima",
+      "videoUrl": "/videos/video27.mp4",
+      "githubUrl": "https://github.com/fatikhalil/projet1.git"
   },
   {
-      "Number": 28,
-      "Title": "Lottie Animations",
-      "Developer": "Lahlou Asmae",
-      "Video URL": "/videos/video28.mp4",
-      "GitHub URL": "https://github.com/lahlouasmae/FlowerShop"
+      "number": 28,
+      "title": "Lottie Animations",
+      "developer": "Lahlou Asmae",
+      "videoUrl": "/videos/video28.mp4",
+      "githubUrl": "https://github.com/lahlouasmae/FlowerShop"
   },
   {
-      "Number": 29,
-      "Title": "NFC",
-      "Developer": "Lahlyal Ahmed Moubarak",
-      "Video URL": "/videos/video29.mp4",
-      "GitHub URL": "https://github.com/amlmbr/GestionNFC"
+      "number": 29,
+      "title": "NFC",
+      "developer": "Lahlyal Ahmed Moubarak",
+      "videoUrl": "/videos/video29.mp4",
+      "githubUrl": "https://github.com/amlmbr/GestionNFC"
   },
   {
-      "Number": 30,
-      "Title": "Multithreading",
-      "Developer": "MAGHNI Manal",
-      "Video URL": "/videos/video30.mp4",
-      "GitHub URL": "https://github.com/ManalMaghni/Projet/tree/master"
+      "number": 30,
+      "title": "Multithreading",
+      "developer": "MAGHNI Manal",
+      "videoUrl": "/videos/video30.mp4",
+      "githubUrl": "https://github.com/ManalMaghni/Projet/tree/master"
   },
   {
-      "Number": 31,
-      "Title": "ConstraintLayout Avancé",
-      "Developer": "Mandour Ilyass",
-      "Video URL": "/videos/video31.mp4",
-      "GitHub URL": "https://github.com/ilyassman/EnsajFood/"
+      "number": 31,
+      "title": "ConstraintLayout Avancé",
+      "developer": "Mandour Ilyass",
+      "videoUrl": "/videos/video31.mp4",
+      "githubUrl": "https://github.com/ilyassman/EnsajFood/"
   },
   {
-      "Number": 32,
-      "Title": "Sauvegarde d'États",
-      "Developer": "Miskar Amina",
-      "Video URL": "/videos/video32.mp4",
-      "GitHub URL": "https://github.com/miskaraminaa/NoteAPP_ViewModel.git"
+      "number": 32,
+      "title": "Sauvegarde d'États",
+      "developer": "Miskar Amina",
+      "videoUrl": "/videos/video32.mp4",
+      "githubUrl": "https://github.com/miskaraminaa/NoteAPP_ViewModel.git"
   },
   {
-      "Number": 33,
-      "Title": "Navigation Component",
-      "Developer": "Sabrou hafsa",
-      "Video URL": "/videos/video33.mp4",
-      "GitHub URL": "https://github.com/Hafsa1sa/CupcakeCorner.git"
+      "number": 33,
+      "title": "Navigation Component",
+      "developer": "Sabrou hafsa",
+      "videoUrl": "/videos/video33.mp4",
+      "githubUrl": "https://github.com/Hafsa1sa/CupcakeCorner.git"
   },
   {
-      "Number": 34,
-      "Title": "Paging Library",
-      "Developer": "Sakhr niama",
-      "Video URL": "/videos/video34.mp4",
-      "GitHub URL": "https://github.com/niama22/Projet34-mobile.git"
+      "number": 34,
+      "title": "Paging Library",
+      "developer": "Sakhr niama",
+      "videoUrl": "/videos/video34.mp4",
+      "githubUrl": "https://github.com/niama22/Projet34-mobile.git"
   },
   {
-      "Number": 35,
-      "Title": "Tests Unitaires avec JUnit",
-      "Developer": "Taghti Zineb",
-      "Video URL": "/videos/video35.mp4",
-      "GitHub URL": "https://github.com/zinebtaghti/To_Do_List"
+      "number": 35,
+      "title": "Tests Unitaires avec JUnit",
+      "developer": "Taghti Zineb",
+      "videoUrl": "/videos/video35.mp4",
+      "githubUrl": "https://github.com/zinebtaghti/To_Do_List"
   },
   {
-      "Number": 36,
-      "Title": "Tests Instrumentés avec Espresso",
-      "Developer": "ZAHIR Oumaima",
-      "Video URL": "/videos/video36.mp4",
-      "GitHub URL": "https://github.com/ZahirOuma/MyLibraryApp/tree/master"
+      "number": 36,
+      "title": "Tests Instrumentés avec Espresso",
+      "developer": "ZAHIR Oumaima",
+      "videoUrl": "/videos/video36.mp4",
+      "githubUrl": "https://github.com/ZahirOuma/MyLibraryApp/tree/master"
   },
   {
-      "Number": 37,
-      "Title": "Services Android",
-      "Developer": "ZENNOURI Nassima",
-      "Video URL": "/videos/video37.mp4",
-      "GitHub URL": "https://github.com/NassimaZENNOURI/ProjetMusique"
+      "number": 37,
+      "title": "Services Android",
+      "developer": "ZENNOURI Nassima",
+      "videoUrl": "/videos/video37.mp4",
+      "githubUrl": "https://github.com/NassimaZENNOURI/ProjetMusique"
   }
 ]
 ;
@@ -325,7 +325,7 @@ const VideoGallery = () => {
       {/* Modal pour afficher la vidéo */}
       <Modal show={showModal} onHide={handleCloseModal} centered size="md">
         <Modal.Header closeButton>
-          <Modal.Title>Vidéo du projet</Modal.Title>
+          <Modal.title>Vidéo du projet</Modal.title>
         </Modal.Header>
         <Modal.Body>
           {currentVideo && (
