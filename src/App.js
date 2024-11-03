@@ -325,7 +325,7 @@ const VideoGallery = () => {
       {/* Modal pour afficher la vidéo */}
       <Modal show={showModal} onHide={handleCloseModal} centered size="md">
         <Modal.Header closeButton>
-          <Modal.title>Vidéo du projet</Modal.title>
+          <Modal.Title>Vidéo du projet</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {currentVideo && (
