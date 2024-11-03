@@ -1,9 +1,10 @@
+// VideoGallery.jsx
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap for styling
 import './VideoGallery.css'; // Optional CSS for additional styling
 
-import React, { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import React, { useState, useRef } from 'react';
+import { Modal, Button } from 'react-bootstrap';
 
 const projects = [
   {
@@ -137,7 +138,7 @@ const projects = [
       "title": "Coroutines",
       "developer": "EL MAHJOUBI Soukaina",
       "videoUrl": "/videos/video19.mp4",
-      "githubUrl": "elmahjoubisouka/Mini_projet_application_Quiz"
+      "githubUrl": "https://github.com/elmahjoubisouka/Mini_projet_application_Quiz"
   },
   {
       "number": 20,
@@ -265,12 +266,12 @@ const projects = [
       "videoUrl": "/videos/video37.mp4",
       "githubUrl": "https://github.com/NassimaZENNOURI/ProjetMusique"
   }
-]
-;
+];
 
 const VideoGallery = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(null);
+  const videoRef = useRef(null); // Référence pour l'élément vidéo
 
   const handleVideoClick = (videoUrl) => {
     setCurrentVideo(videoUrl);
@@ -282,19 +283,31 @@ const VideoGallery = () => {
     setCurrentVideo(null);
   };
 
+  // Fonction pour lancer la vidéo en plein écran
+  const handleFullScreen = () => {
+    if (videoRef.current) {
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if (videoRef.current.webkitRequestFullscreen) { /* Safari */
+        videoRef.current.webkitRequestFullscreen();
+      } else if (videoRef.current.msRequestFullscreen) { /* IE11 */
+        videoRef.current.msRequestFullscreen();
+      }
+    }
+  };
+
   return (
     <div className="container my-5">
-      
       <div className="container">
-      <header className="text-center mb-5">
-        <h3 className="display-4">Contrôle pratique programmation mobile (Kotlin)</h3>
-        <h4 className="text-muted">2ITE ENSA EL JADIDA</h4>
-        <h5 className="text-secondary">Pr. Mohamed LACHGAR</h5>
-        <p style={{ color: "red" }}>
-          Il est impératif d'utiliser les conceptions fixées dans chaque travail.
-        </p>
-      </header>
-    </div>
+        <header className="text-center mb-5">
+          <h3 className="display-4">Contrôle pratique programmation mobile (Kotlin)</h3>
+          <h4 className="text-muted">2ITE ENSA EL JADIDA</h4>
+          <h5 className="text-secondary">Pr. Mohamed LACHGAR</h5>
+          <p style={{ color: "red" }}>
+            Il est impératif d'utiliser les conceptions fixées dans chaque travail.
+          </p>
+        </header>
+      </div>
 
       <div className="row">
         {projects.map((project, index) => (
@@ -302,13 +315,17 @@ const VideoGallery = () => {
             <div className="card h-100 shadow border-0 rounded">
               <div 
                 className="card-img-top rounded-top video-thumbnail" 
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', position: 'relative' }}
                 onClick={() => handleVideoClick(project.videoUrl)}
               >
                 <video width="100%" height="150" controls={false}>
                   <source src={project.videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
+                  Votre navigateur ne supporte pas la balise vidéo.
                 </video>
+                {/* Optionnel : Ajout d'un overlay pour indiquer qu'il est cliquable */}
+                <div className="overlay">
+                  <span className="play-button">&#9658;</span>
+                </div>
               </div>
               <div className="card-body text-center">
                 <h5 className="card-title font-weight-bold">{`Projet ${project.number}: ${project.title}`}</h5>
@@ -323,17 +340,36 @@ const VideoGallery = () => {
       </div>
 
       {/* Modal pour afficher la vidéo */}
-      <Modal show={showModal} onHide={handleCloseModal} centered size="md">
+      <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
         <Modal.Header closeButton>
           <Modal.Title>Vidéo du projet</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {currentVideo && (
-            <div className="video-container">
-              <video width="100%" controls autoPlay>
+            <div className="video-container" style={{ position: 'relative' }}>
+              <video
+                ref={videoRef}
+                width="100%"
+                controls
+                autoPlay
+                style={{ display: 'block' }}
+              >
                 <source src={currentVideo} type="video/mp4" />
-                Your browser does not support the video tag.
+                Votre navigateur ne supporte pas la balise vidéo.
               </video>
+              {/* Bouton plein écran personnalisé */}
+              <Button
+                variant="secondary"
+                onClick={handleFullScreen}
+                style={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px',
+                  opacity: 0.7,
+                }}
+              >
+                Plein Écran
+              </Button>
             </div>
           )}
         </Modal.Body>
